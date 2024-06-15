@@ -2,7 +2,7 @@ FROM node:latest
 
 WORKDIR /home/choreouser
 
-EXPOSE 3000
+EXPOSE 5050
 
 COPY files/* /home/choreouser/
 
@@ -16,5 +16,4 @@ RUN apt-get update &&\
     npm install
 
 CMD [ "node", "index.js" ]
-
 USER 10008
